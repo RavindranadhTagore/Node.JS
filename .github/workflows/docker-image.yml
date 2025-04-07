@@ -22,6 +22,10 @@ jobs:
 
     
       - name: Build Docker Image
+  
+
+            docker build -t bishal5438/rest-api .
+
         run: docker build -t bishal5438/rest-api .
 
      
