@@ -9,9 +9,9 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY . /app/
 
-RUN npm install -y
+RUN npm install 
 
 COPY . .
 
