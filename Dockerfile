@@ -1,5 +1,5 @@
 FROM node:20-alpine 
-WORKDIR /app
+WORKDIR /usr/src/app
 COPY . /app/
 RUN npm install
 EXPOSE 80
