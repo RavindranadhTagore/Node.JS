@@ -22,11 +22,11 @@ jobs:
 
     
       - name: Build Docker Image
-        run: docker build -t bishal5438/rest-api .
+        run: docker build -t ravindranadhtagore/tagore 
 
      
       - name: Push to DockerHub
-        run: docker push bishal5438/rest-api:latest 
+        run: docker push ravindranadhtagore/tagore:latest 
 
   
   Deploy:
@@ -37,7 +37,7 @@ jobs:
     steps:
      
       - name: Pull the Docker Image
-        run: docker pull bishal5438/rest-api:latest 
+        run: docker pull ravindranadhtagore/tagore:latest 
         
       - name: Delete Old Container
         run: |
@@ -46,4 +46,4 @@ jobs:
           fi
 
       - name: Run the Container
-        run: docker run -d -p 80:80 --name rest-api-Container bishal5438/rest-api
+        run: docker run -d -p 80:80 --name rest-api-Container ravindranadhtagore/tagore
