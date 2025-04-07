@@ -22,7 +22,7 @@ jobs:
 
     
       - name: Build Docker Image
-        run: docker build -t ravindranadhtagore/tagore 
+        run: docker build -t ravindranadhtagore/tagore .
 
      
       - name: Push to DockerHub
