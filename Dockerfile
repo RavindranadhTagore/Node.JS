@@ -19,4 +19,4 @@ EXPOSE 80
 
 CMD [ "node", "index.js" ]
 
-docker build -t bishal5438/rest-api
+
