@@ -1,7 +1,7 @@
 FROM node:20-alpine 
 WORKDIR /app
 COPY . /app/
-RUN npm install
+RUN -c npm install
 EXPOSE 80
 CMD [ "node", "index.js" ]
 
